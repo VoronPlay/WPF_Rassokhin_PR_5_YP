@@ -1,0 +1,24 @@
+﻿<Page x:Class="WPF_Rassokhin_PR_5_YP.Page8"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_Rassokhin_PR_5_YP"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page8">
+
+    <Grid>
+        <Grid Background="Lavender">
+            <DataGrid x:Name="phonesGrid" AutoGenerateColumns="True" ItemsSource="{DynamicResource ResourceKey=phones}">
+                <DataGrid.Resources>
+                    <col:ArrayList x:Key="phones">
+                        <local:Phone Title="iPhone 6S" Company="Apple" Price="54990" />
+                        <local:Phone Title="Lumia 950" Company="Microsoft" Price="39990" />
+                        <local:Phone Title="Nexus 5X" Company="Google" Price="29990" />
+                    </col:ArrayList>
+                </DataGrid.Resources>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="WPF_Rassokhin_PR_5_YP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Rassokhin_PR_5_YP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Frame Name="odin" Source="Page1.xaml" Content=""></Frame>
+        <Button Content="Задание 1" x:Name="Odin" Width="70" Height="40" HorizontalAlignment="Left" Margin="0,0,0,0" Click="z_odin"/>
+        <Button Content="Задание 2" x:Name="Dva" Width="70" Height="40" HorizontalAlignment="Left" Margin="80,0,0,0" Click="z_dva"/>
+        <Button Content="Задание 3" x:Name="Tri" Width="70" Height="40" HorizontalAlignment="Left" Margin="160,0,0,0" Click="z_tri"/>
+        <Button Content="Задание 4" x:Name="Hetire" Width="70" Height="40" HorizontalAlignment="Left" Margin="240,0,0,0" Click="z_hetire"/>
+        <Button Content="Задание 5" x:Name="Payti" Width="70" Height="40" HorizontalAlignment="Left" Margin="320,0,0,0" Click="z_payti"/>
+    </Grid>
+</Window>
