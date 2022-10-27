@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPF_Rassokhin_PR_5_YP.Window7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Rassokhin_PR_5_YP"
+        mc:Ignorable="d"
+        Title="Window7" Height="450" Width="800" Background="OldLace">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="67*"/>
+        </Grid.ColumnDefinitions>
+        <Button Click="home" Grid.Row="0" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="1" Background="OldLace">
+            <Image Source="Image\home2.png"></Image>
+        </Button>
+        <Button Click="inbox" Background="OldLace" Grid.Row="1" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="1">
+            <Image Source="Image\inbox2.png"></Image>
+        </Button>
+        <Button Click="sent_items" Background="OldLace" Grid.Row="2" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="1">
+            <Image Source="Image\sent_items2.png"></Image>
+        </Button>
+        <Button Click="settings" Background="OldLace" Grid.Row="3" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="1">
+            <Image Source="Image\settings2.png"></Image>
+        </Button>
+        <Button Click="spam" Background="OldLace" Grid.Row="5" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="1">
+            <Image Source="Image\spam2.png"></Image>
+        </Button>
+        <Frame Source="Page15.xaml" Grid.Row="0" Grid.Column="1" Grid.RowSpan="5" Grid.ColumnSpan="1"/>
+        <Frame x:Name="Frame" Grid.Row="0" Grid.Column="1" Grid.RowSpan="5" Grid.ColumnSpan="1"/>
+    </Grid>
+</Window>

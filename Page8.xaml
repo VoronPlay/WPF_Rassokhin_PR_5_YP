@@ -7,18 +7,26 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page8">
-
     <Grid>
-        <Grid Background="Lavender">
-            <DataGrid x:Name="phonesGrid" AutoGenerateColumns="True" ItemsSource="{DynamicResource ResourceKey=phones}">
-                <DataGrid.Resources>
-                    <col:ArrayList x:Key="phones">
-                        <local:Phone Title="iPhone 6S" Company="Apple" Price="54990" />
-                        <local:Phone Title="Lumia 950" Company="Microsoft" Price="39990" />
-                        <local:Phone Title="Nexus 5X" Company="Google" Price="29990" />
-                    </col:ArrayList>
-                </DataGrid.Resources>
-            </DataGrid>
-        </Grid>
+        <DataGrid x:Name="DataGridXAML" HorizontalAlignment="Left" VerticalAlignment="Top" Width="800" Height="450">
+            <DataGrid.Resources>
+                <Style  TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Blue"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                    <Setter Property="BorderBrush" Value="White"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Padding" Value="5"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Место" Binding="{Binding Место}" Width="110"/>
+                <DataGridTextColumn Header="Точка" Binding="{Binding Точка}" Width="110"/>
+                <DataGridTextColumn Header="Серийный номер" Binding="{Binding Серийный_номер}" Width="110"/>
+                <DataGridTextColumn Header="IP адрес" Binding="{Binding IP_адрес}"/>
+                <DataGridTextColumn Header="МАС адрес" Binding="{Binding MAC_адрес}"/>
+                <DataGridTextColumn Header="Состояние подключение" Binding="{Binding Состояние_подключения}"/>
+                <DataGridTextColumn Header="Дата и время Детектора" Binding="{Binding Дата_и_время_Детектора}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>

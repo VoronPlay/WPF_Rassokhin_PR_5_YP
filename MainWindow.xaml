@@ -13,5 +13,8 @@
         <Button Content="Задание 3" x:Name="Tri" Width="70" Height="40" HorizontalAlignment="Left" Margin="160,0,0,0" Click="z_tri"/>
         <Button Content="Задание 4" x:Name="Hetire" Width="70" Height="40" HorizontalAlignment="Left" Margin="240,0,0,0" Click="z_hetire"/>
         <Button Content="Задание 5" x:Name="Payti" Width="70" Height="40" HorizontalAlignment="Left" Margin="320,0,0,0" Click="z_payti"/>
+        <Button Content="Задание 6" x:Name="Hesti" Width="70" Height="40" HorizontalAlignment="Left" Margin="400,0,0,0" Click="z_hesti"/>
+        <Button Content="Задание 7" x:Name="Semi" Width="70" Height="40" HorizontalAlignment="Left" Margin="480,0,0,0" Click="z_Semi"/>
+        <Button Content="Задание 8" x:Name="Vosemi" Width="70" Height="40" HorizontalAlignment="Left" Margin="560,0,0,0" Click="z_Vosemi"/>
     </Grid>
 </Window>

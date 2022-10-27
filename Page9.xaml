@@ -1,0 +1,31 @@
+﻿<Page x:Class="WPF_Rassokhin_PR_5_YP.Page9"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_Rassokhin_PR_5_YP"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page9">
+    <Grid>
+        <DataGrid x:Name="DataGridXAML" HorizontalAlignment="Left" VerticalAlignment="Top" Width="800" Height="450">
+            <DataGrid.Resources>
+                <Style  TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                    <Setter Property="BorderBrush" Value="Gray"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="Padding" Value="5"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Job ID" Binding="{Binding JobID}" Width="110"/>
+                <DataGridTextColumn Header="Job Data" Binding="{Binding JobData}" Width="110"/>
+                <DataGridTextColumn Header="User ID" Binding="{Binding UserID}" Width="110"/>
+                <DataGridTextColumn Header="Issue Subject" Binding="{Binding IssueSubject}"/>
+                <DataGridTextColumn Header="Screen" Binding="{Binding Screen}"/>
+                <DataGridTextColumn Header="Furtherlnformation" Binding="{Binding Furtherlnformation}"/>
+                <DataGridTextColumn Header="Job Status" Binding="{Binding JobStatus}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

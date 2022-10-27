@@ -18,6 +18,8 @@ namespace WPF_Rassokhin_PR_5_YP
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
+    /// 
+    
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -53,6 +55,24 @@ namespace WPF_Rassokhin_PR_5_YP
             Window4 window4 = new Window4();
             window4.Show();
 
+        }
+
+        private void z_hesti(object sender, RoutedEventArgs e)
+        {
+            Window5 window5 = new Window5();
+            window5.Show();
+        }
+
+        private void z_Semi(object sender, RoutedEventArgs e)
+        {
+            Window6 window6 = new Window6();
+            window6.Show();
+        }
+
+        private void z_Vosemi(object sender, RoutedEventArgs e)
+        {
+            Window7 window7 = new Window7();
+            window7.Show();
         }
     }
 }

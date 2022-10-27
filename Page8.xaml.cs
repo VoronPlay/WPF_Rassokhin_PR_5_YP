@@ -23,20 +23,33 @@ namespace WPF_Rassokhin_PR_5_YP
         public Page8()
         {
             InitializeComponent();
-        }
-        public class Phone
-        {
-            public string Title { get; set; }
-            public string Company { get; set; }
-            public int Price { get; set; }
-        }
-        List<Phone> phonesList = new List<Phone>
-{
-    new Phone { Title="iPhone 6S", Company="Apple", Price=54990 },
-    new Phone {Title="Lumia 950", Company="Microsoft", Price=39990 },
-    new Phone {Title="Nexus 5X", Company="Google", Price=29990 }
-};
 
+
+            Person johnSmith = new Person();
+
+            johnSmith.Место = "Вход офис";
+            johnSmith.Точка = "У двери";
+            johnSmith.Серийный_номер = "55484403";
+            johnSmith.IP_адрес = "192.168.201.23";
+            johnSmith.MAC_адрес = "00:60:36:22:82:СБ";
+            johnSmith.Состояние_подключения = "Подключено";
+            johnSmith.Дата_и_время_Детектора = "2016.06.24 04:04:38";
+
+            DataGridXAML.Items.Add(johnSmith);
+
+        }
+        public class Person
+        {
+            public string Место { get; set; }
+            public string Точка { get; set; }
+            public string Серийный_номер { get; set; }
+            public string IP_адрес { get; set; }
+            public string MAC_адрес { get; set; }
+            public string Состояние_подключения { get; set; }
+            public string Дата_и_время_Детектора { get; set; }
+
+
+        }
 
 
     }
